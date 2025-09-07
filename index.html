@@ -2,736 +2,434 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>destify.ai - Cloud ERP</title>
-    <link rel="stylesheet" href="/assets/libs/OwlCarousel-2/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="/dist/css/iconfont/tabler-icons.css">
-    <link rel="stylesheet" href="/dist/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destify - AI-Powered DMC Platform | Transform Your Travel Business</title>
+  <meta name="description"
+    content="The first AI platform built specifically for DMCs. Get 80% less staff dependency, instant quotes, and 20% more profit. Stop running your DMC like it's 2010.">
+  <meta name="author" content="Destify">
+  <meta name="keywords"
+    content="DMC, destination management, AI platform, travel technology, booking automation, travel quotes">
+
+  <meta property="og:title" content="Destify - AI-Powered DMC Platform | Transform Your Travel Business">
+  <meta property="og:description"
+    content="The first AI platform built specifically for DMCs. Get 80% less staff dependency, instant quotes, and 20% more profit.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@lovable_dev">
+  <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-    <!------------------------------>
-    <!-- Header Start -->
-    <!------------------------------>
-    <header class="main-header position-fixed w-100">
-        <div class="container">
-            <nav class="navbar navbar-expand-xl py-0">
-                <div class="logo">
-                    <a class="navbar-brand py-0 me-0" href="#">
-                        <!-- <img src="/assets/images/sasscandy-logo.svg" alt=""> -->
-                        <span class="text-primary" style="font-size: 1.25em;"><b>destify</b></span>.ai
-                    </a>
-                </div>
-                <a class="d-inline-block d-lg-block d-xl-none d-xxl-none  nav-toggler text-decoration-none"
-                    data-bs-toggle="offcanvas" href="#offcanvasExample" aria-controls="offcanvasExample">
-                    <i class="ti ti-menu-2 text-warning"></i>
-                </a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-capitalize" aria-current="page" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-capitalize" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-capitalize" href="#">Pricing </a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link text-capitalize" href="#">Elements </a>
-                        </li> -->
-                        <!-- <li class="nav-item">
-                            <a class="nav-link text-capitalize" href="#">blog</a>
-                        </li> -->
-                    </ul>
-                    <div class="d-flex align-items-center">
-                        <div class="input-group  search">
-                            <button class="btn border-0 p-0" type="button" id="button-addon1"><i
-                                    class="ti ti-search text-white"></i></button>
-                            <input type="text" class="form-control border-0 bg-transparent ps-2" placeholder="search"
-                                aria-label="Example text with button addon" aria-describedby="button-addon1">
-                        </div>
-                        <a class="btn btn-warning btn-hover-secondery text-capitalize " href="#">register</a>
-                    </div>
-                </div>
-            </nav>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <div class="logo-icon">
+            <span>D</span>
+          </div>
+          <span class="logo-text">Destify</span>
         </div>
 
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header">
-                <div class="logo">
-                    <a class="navbar-brand py-0 me-0" href="#"><img src="/assets/images/Creato-logo.svg" alt=""></a>
-                </div>
-                <button type="button" class="btn-close text-reset  ms-auto" data-bs-dismiss="offcanvas"
-                    aria-label="Close"><i class="ti ti-x text-warning"></i></button>
-            </div>
-            <div class="offcanvas-body pt-0">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-capitalize" aria-current="page" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-capitalize" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-capitalize" href="#">Pricing </a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link text-capitalize" href="#">Elements </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-capitalize" href="#">blog </a>
-                    </li> -->
-                </ul>
-                <div class="login d-block align-items-center mt-3">
-                    <a class="btn btn-warning text-capitalize w-100" href="#">contact us</a>
-                </div>
-            </div>
+        <nav class="nav">
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#about">About</a>
+        </nav>
+
+        <div class="header-buttons">
+          <button class="btn btn-ghost">Sign In</button>
+          <button class="btn btn-primary">Get Started</button>
         </div>
-    </header>
-    <!------------------------------>
-    <!-- Header End  -->
-    <!------------------------------>
+      </div>
+    </div>
+  </header>
 
-    <!------------------------------>
-    <!--- Hero Banner Start--------->
-    <!------------------------------>
-    <section class="hero-banner position-relative overflow-hidden">
-        <div class="container">
-            <div class="row d-flex flex-wrap align-items-center">
-                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                    <div class="position-relative left-hero-color">
-                        <h1 class="mb-0 fw-bold">
-                            Your Cloud Office for Destination Management
-                        </h1>
-                        <p>The business management tool you love.</p>
-                        <a href="#" class="btn btn-warning btn-hover-secondery"><span class="d-inline-block me-2"><i
-                                    class="ti ti-playstation-triangle"></i></span> Discover this Video</a>
-                    </div>
-                </div>
-                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                    <div class="position-relative right-hero-color">
-                        <img src="/assets/images/hero/right-image.svg" class="img-fluid">
-                    </div>
-                </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg-pattern"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="badge">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+            <span>The Future of DMC Management</span>
+          </div>
+
+          <h1 class="hero-title">
+            Stop Running Your DMC Like It's
+            <span class="gradient-text">2010</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            The first AI platform built specifically for DMCs. Transform Excel chaos into
+            AI-powered efficiency with 80% less staff dependency and 20% more profit.
+          </p>
+
+          <div class="benefits-grid">
+            <div class="benefit">
+              <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+              <span>80% Less Staff</span>
             </div>
+            <div class="benefit">
+              <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M06 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="m16 10-4 4-4-4"></path>
+              </svg>
+              <span>Instant Quotes</span>
+            </div>
+            <div class="benefit">
+              <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"></polyline>
+              </svg>
+              <span>10x Scale</span>
+            </div>
+            <div class="benefit">
+              <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+              <span>20% More Profit</span>
+            </div>
+            <div class="benefit">
+              <svg class="benefit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              <span>Future-Proof</span>
+            </div>
+          </div>
+
+          <div class="cta-buttons">
+            <button class="btn btn-cta">
+              Start Your Free Trial
+              <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12,5 19,12 12,19"></polyline>
+              </svg>
+            </button>
+            <button class="btn btn-outline">See Demo</button>
+          </div>
         </div>
-    </section>
-    <!------------------------------>
-    <!--- Hero Banner End--------->
-    <!------------------------------>
 
-    <!------------------------------>
-    <!--- Service sectin Start------>
-    <!------------------------------>
-    <section class="service position-relative overflow-hidden">
-        <div class="container position-relative">
-            <img src="/assets/images/service/dot-shape.png" class="shape position-absolute">
-            <div class="row">
-                <div class="col-12"><small class="fs-7 d-block">Working Process</small></div>
-                <div
-                    class="col-12 d-xxl-flex d-xl-flex d-lg-flex d-md-flex d-sm-block d-block align-items-center justify-content-xxl-between justify-content-xl-between justify-content-lg-between justify-content-md-between justify-content-sm-between justify-content-sm-center ">
-                    <h2 class="fs-2 text-black mb-0">Our Featured Service<br> that We Provide</h2>
-                    <a href="#" class="btn btn-warning btn-hover-secondery section-btn">All Services</a>
-                </div>
-            </div>
-            <div class="row d-flex flex-wrap justify-content-center step-row">
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 text-center">
-                    <div class="card border-0 shadow">
-                        <div class="card-body">
-                            <div
-                                class="icon-round overflow-hidden rounded-circle position-relative d-flex align-items-center justify-content-center mx-auto text-center">
-                                <i class="ti ti-download text-primary position-relative"></i>
-                            </div>
-                            <h5 class="mb-0 fw-500">Step 1</h5>
-                            <h3 class="fs-4">Download our App</h3>
-                            <p class="fs-7 mb-0 fw-500">There are many variations of pass for ages of oremsum.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 text-center">
-                    <div class="card border-0 shadow">
-                        <div class="card-body">
-                            <div
-                                class="icon-round overflow-hidden rounded-circle position-relative d-flex align-items-center justify-content-center mx-auto text-center">
-                                <i class="ti ti-user text-primary position-relative"></i>
-                            </div>
-                            <h5 class="mb-0 fw-500">Step 2</h5>
-                            <h3 class="fs-4">Create a free Account</h3>
-                            <p class="fs-7 mb-0 fw-500">There are many variations of pass for ages of oremsum.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 text-center">
-                    <div class="card border-0 shadow">
-                        <div class="card-body">
-                            <div
-                                class="icon-round overflow-hidden rounded-circle position-relative d-flex align-items-center justify-content-center mx-auto text-center">
-                                <i class="ti ti-gift text-primary position-relative"></i>
-                            </div>
-                            <h5 class="mb-0 fw-500">Step 3</h5>
-                            <h3 class="fs-4">Now Start your Journey</h3>
-                            <p class="fs-7 mb-0 fw-500">There are many variations of pass for ages of oremsum.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="hero-image">
+          <div class="image-container">
+            <img src="src/assets/hero-destify.jpg" alt="Destify AI Platform Dashboard">
+            <div class="image-overlay"></div>
+          </div>
+          <div class="floating-badge floating-badge-top">AI-Powered</div>
+          <div class="floating-badge floating-badge-bottom">24/7 Active</div>
         </div>
-    </section>
-    <!------------------------------>
-    <!--- Service sectin Start------>
-    <!------------------------------>
+      </div>
+    </div>
+  </section>
 
-    <!---------------------------------->
-    <!--- Our Service sectin Start------>
-    <!---------------------------------->
-    <section class="our-service position-relative overflow-hidden">
-        <div class="container">
-            <div class="row">
-                <div class="col-xxl-8 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                    <img src="/assets/images/our-service/our-service.svg" class="img-fluid">
-                </div>
-                <div
-                    class="col-xxl-4 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 ps-xxl-0 ps-xl-0 ps-lg-3 ps-md-3 ps-sm-3 ps-3">
-                    <small class="fs-7 d-block">Our Service</small>
-                    <h2 class="fs-2 text-black mb-0">Our Featured Service that We Provide</h2>
-                    <p class="mb-0 fw-500 fs-7">
-                        Seamlessly see the tasks that need your attention, check when your next meeting is coming up,
-                        and keep up with your progress.
-                    </p>
-                    <ul class="list-unstyled mb-0 pl-0">
-                        <li class="d-flex flex-wrap align-items-start">
-                            <i class="ti ti-circle-check fs-4 pe-2"></i>
-                            <span class="fs-7 text-black">List of the tasks that require your attention.</span>
-                        </li>
-                        <li class="d-flex flex-wrap align-items-start">
-                            <i class="ti ti-circle-check fs-4 pe-2"></i>
-                            <span class="fs-7 text-black">Google Calendar integration to see when interruptions will
-                                happen</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+  <!-- Problem Section -->
+  <section class="problem-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="problem-badge">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path>
+            <line x1="12" y1="9" x2="12" y2="13"></line>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg>
+          <span>Still Running on Excel?</span>
         </div>
-    </section>
-    <!------------------------------>
-    <!--- Our Service sectin End---->
-    <!------------------------------>
 
-    <!------------------------------>
-    <!-- Portfolio section Start---->
-    <!------------------------------>
-    <section class="portfolio position-relative bg-primary">
-        <div class="container position-relative">
-            <div class="row">
-                <div class="col-12"><small class="fs-7 d-block text-warning">Product Docs</small></div>
-                <div
-                    class="col-12 d-xxl-flex d-xl-flex d-lg-flex d-md-flex d-sm-block d-block align-items-center justify-content-xxl-between justify-content-xl-between justify-content-lg-between justify-content-md-between justify-content-sm-between justify-content-sm-center ">
-                    <h2 class="fs-3 text-white mb-0">Beautiful Docs<br> for your APIs.</h2>
-                    <a href="#" class="btn btn-warning btn-hover-secondery section-btn">Open Portfolio</a>
-                </div>
-            </div>
-            <div class="row d-flex flex-wrap justify-content-center step-row">
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 text-center">
-                    <div class="card bg-transparent">
-                        <div class="card-body">
-                            <div class="icon mx-auto rounded-circle d-flex justify-content-center align-items-center"><i
-                                    class="ti ti-brand-github text-white"></i></div>
-                            <h3 class="fs-4 text-white">Github Sync</h3>
-                            <p class="fs-7 mb-0 fw-500">Contrary to popular belief, Lorem Ipsum is not simply random
-                                text.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 text-center">
-                    <div class="card bg-transparent">
-                        <div class="card-body">
-                            <div class="icon  mx-auto rounded-circle d-flex justify-content-center align-items-center">
-                                <i class="ti ti-crown text-white"></i>
-                            </div>
-                            <h3 class="fs-4 text-white">Branding</h3>
-                            <p class="fs-7 mb-0 fw-500">Contrary to popular belief, Lorem Ipsum is not simply random
-                                text.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 text-center">
-                    <div class="card bg-transparent">
-                        <div class="card-body">
-                            <div class="icon mx-auto rounded-circle d-flex justify-content-center align-items-center"><i
-                                    class="ti ti-message-circle-2 text-white"></i></div>
-                            <h3 class="fs-4 text-white">Comments</h3>
-                            <p class="fs-7 mb-0 fw-500">Contrary to popular belief, Lorem Ipsum is not simply random
-                                text.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <h2 class="section-title">
+          That's Why Your Business Is
+          <span class="text-destructive">Stuck</span>
+        </h2>
+
+        <p class="section-subtitle">
+          While you're drowning in spreadsheets, your competitors are scaling with AI.
+          The future isn't "more staff" or "more spreadsheets" — it's intelligent automation.
+        </p>
+      </div>
+
+      <div class="problems-grid">
+        <div class="problem-card">
+          <div class="problem-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path>
+              <line x1="12" y1="9" x2="12" y2="13"></line>
+              <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+          </div>
+          <h3>Capped Bookings</h3>
+          <p>Excel spreadsheets and manual processes limit your growth potential</p>
         </div>
-        <div class="container position-relative">
-            <div class="portfolio-wrap">
-                <div class="owl-carousel owl-theme portfolio-slider">
-                    <div class="item"><a href="#"><img src="/assets/images/portfolio/Portfolio.jpg" class="w-100"></a>
-                    </div>
-                    <div class="item"><a href="#"><img src="/assets/images/portfolio/Portfolio.jpg" class="w-100"></a>
-                    </div>
-                    <div class="item"><a href="#"><img src="/assets/images/portfolio/Portfolio.jpg" class="w-100"></a>
-                    </div>
-                    <div class="item"><a href="#"><img src="/assets/images/portfolio/Portfolio.jpg" class="w-100"></a>
-                    </div>
-                    <div class="item"><a href="#"><img src="/assets/images/portfolio/Portfolio.jpg" class="w-100"></a>
-                    </div>
-                </div>
-            </div>
+
+        <div class="problem-card">
+          <div class="problem-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"></polyline>
+            </svg>
+          </div>
+          <h3>Thin Margins</h3>
+          <p>Inefficient operations eat into your profits every single day</p>
         </div>
-    </section>
-    <!------------------------------>
-    <!-- Portfolio section End ----->
-    <!------------------------------>
 
-    <!------------------------------>
-    <!-- Pricing section Start------>
-    <!------------------------------>
-    <section class="pricing position-relative overflow-hidden">
-        <div class="container position-relative">
-            <div class="row justify-content-center">
-                <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 text-center">
-                    <small class="fs-7 d-block">Pricing Plan</small>
-                    <h2 class="fs-3 pricing-head text-black mb-0 position-relative">What’s About Our Pricing
-                        Subscription</h2>
-                </div>
-            </div>
-            <div class="row plans">
-                <div class="col-12 text-center">
-                    <div class="form-check form-switch d-flex justify-content-center ps-0 align-items-center">
-                        <label class="form-check-label text-black fs-7" for="flexSwitchCheckChecked">Monthly</label>
-                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                        <label class="form-check-label text-black fs-7" for="flexSwitchCheckChecked">Yearly</label>
-                    </div>
-                    <div class="save d-inline-block position-relative text-warning fw-500 fs-9 text-center">Save Up To
-                        58%</div>
-                </div>
-            </div>
-            <div class="row justify-content-center price-plan">
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="card position-relative shadow border-0 h-100">
-                        <div class="card-body pb-4">
-                            <small class="fs-7 d-block text-warning text-center">Personal</small>
-                            <h2 class="mb-4 text-center position-relative"><sub class="fs-2 text-black">0</sub><sup
-                                    class="fs-6 position-absolute">$</sup></h2>
-                            <small class="fs-7 d-block text-center">Free</small>
-                            <p class="fs-7 text-center fw-500">For individuals looking for a simple CRM solution</p>
-                            <ul class="list-unstyled mb-0 pl-0">
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">Basic CRM features</span>
-                                </li>
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">Unlimited Personal Pipelines</span>
-                                </li>
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">Email Power Tools</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="card-action text-center pb-xxl-5 pb-xl-5 pb-lg-5 pb-md-4 pb-sm-4 pb-4">
-                            <a href="#" class="btn btn-warning btn-hover-secondery text-capitalize">Set Started</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="card position-relative shadow border-0 h-100">
-                        <div class="position-absolute badge bg-warning d-inline-block mx-auto">
-                            Most Popular
-                        </div>
-                        <div class="card-body pb-4">
-                            <small class="fs-7 d-block text-warning text-center">Professional</small>
-                            <h2 class="mb-4 text-center position-relative"><sub class="fs-2 text-black">49</sub><sup
-                                    class="fs-6 position-absolute">$</sup></h2>
-                            <small class="fs-7 d-block text-center">Free</small>
-                            <p class="fs-7 text-center fw-500">For individuals looking for a simple CRM solution</p>
-                            <ul class="list-unstyled mb-0 pl-0">
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">Basic CRM features</span>
-                                </li>
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">Unlimited Personal Pipelines</span>
-                                </li>
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">Email Power Tools</span>
-                                </li>
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">Unlimited Shared Pipelines</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="card-action text-center pb-xxl-5 pb-xl-5 pb-lg-5 pb-md-4 pb-sm-4 pb-4">
-                            <a href="#" class="btn btn-warning btn-hover-secondery text-capitalize">Set Started</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="card position-relative shadow border-0 h-100">
-                        <div class="card-body pb-4">
-                            <small class="fs-7 d-block text-warning text-center">Enterprise</small>
-                            <h2 class="mb-4 text-center position-relative"><sub class="fs-2 text-black">99</sub><sup
-                                    class="fs-6 position-absolute">$</sup></h2>
-                            <small class="fs-7 d-block text-center">Free</small>
-                            <p class="fs-7 text-center fw-500">For individuals looking for a simple CRM solution</p>
-                            <ul class="list-unstyled mb-0 pl-0">
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">Basic CRM features</span>
-                                </li>
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">Unlimited Personal Pipelines</span>
-                                </li>
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">Email Power Tools</span>
-                                </li>
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black">Unlimited Shared Pipelines</span>
-                                </li>
-                                <li class="d-flex align-items-start">
-                                    <i class="ti ti-circle-check fs-4 pe-2"></i>
-                                    <span class="fs-7 text-black"> Full API Access</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="card-action text-center pb-xxl-5 pb-xl-5 pb-lg-5 pb-md-4 pb-sm-4 pb-4">
-                            <a href="#" class="btn btn-warning btn-hover-secondery text-capitalize">Set Started</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="problem-card">
+          <div class="problem-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="m22 21-3-3m0 0a2 2 0 0 0-3-3 2 2 0 0 0-3 3 2 2 0 0 0 3 3 2 2 0 0 0 3-3Z"></path>
+            </svg>
+          </div>
+          <h3>Staff Drowning</h3>
+          <p>Your team is overwhelmed with manual tasks and repetitive work</p>
         </div>
-    </section>
-    <!------------------------------>
-    <!-- Pricing section End-------->
-    <!------------------------------>
 
-    <!------------------------------>
-    <!------ FAQ section Start------>
-    <!------------------------------>
-    <section class="faq position-relative overflow-hidden">
-        <div class="container position-relative">
-            <div class="row justify-content-center">
-                <div class="col-12 text-center">
-                    <small class="fs-7 d-block">Frequently Asked Questions</small>
-                    <h2 class="fs-3 text-black mb-0">Want to ask something from us?</h2>
-                </div>
-            </div>
-            <div class="accordion-block">
-                <div class="accordion row" id="accordionPanelsStayOpenExample">
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                        <div class="accordion-item mb-3">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                <button class="accordion-button text-black fs-7" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                                    aria-controls="panelsStayOpen-collapseOne">
-                                    Letraset sheets containing sum passages ?
-                                </button>
-                            </h2>
-                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-                                aria-labelledby="panelsStayOpen-headingOne">
-                                <div class="accordion-body fs-7 fw-500 pt-0">
-                                    Seamlessly see the tasks that need your attention, check when your next meeting is
-                                    coming up, and keep up with your progress.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item mb-3">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                                <button class="accordion-button collapsed text-black fs-7" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
-                                    aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                    There are many variations ?
-                                </button>
-                            </h2>
-                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-                                aria-labelledby="panelsStayOpen-headingTwo">
-                                <div class="accordion-body fs-7 fw-500 pt-0">
-                                    Seamlessly see the tasks that need your attention, check when your next meeting is
-                                    coming up, and keep up with your progress.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item mb-3">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                                <button class="accordion-button collapsed text-black fs-7" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
-                                    aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                                    Lorem Ipsum generators on the Internet tend ?
-                                </button>
-                            </h2>
-                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-                                aria-labelledby="panelsStayOpen-headingThree">
-                                <div class="accordion-body fs-7 fw-500 pt-0">
-                                    Seamlessly see the tasks that need your attention, check when your next meeting is
-                                    coming up, and keep up with your progress.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                        <div class="accordion-item mb-3">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingfour">
-                                <button class="accordion-button collapsed text-black fs-7" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefour"
-                                    aria-expanded="false" aria-controls="panelsStayOpen-collapsefour">
-                                    Various versions have evolved over the ?
-                                </button>
-                            </h2>
-                            <div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse"
-                                aria-labelledby="panelsStayOpen-headingfour">
-                                <div class="accordion-body fs-7 fw-500 pt-0">
-                                    Seamlessly see the tasks that need your attention, check when your next meeting is
-                                    coming up, and keep up with your progress.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item mb-3">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingfive">
-                                <button class="accordion-button collapsed text-black fs-7" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefive"
-                                    aria-expanded="false" aria-controls="panelsStayOpen-collapsefive">
-                                    Finibus bonorum et malorum ?
-                                </button>
-                            </h2>
-                            <div id="panelsStayOpen-collapsefive" class="accordion-collapse collapse"
-                                aria-labelledby="panelsStayOpen-headingfour">
-                                <div class="accordion-body fs-7 fw-500 pt-0">
-                                    Seamlessly see the tasks that need your attention, check when your next meeting is
-                                    coming up, and keep up with your progress.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item mb-3">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingsix">
-                                <button class="accordion-button collapsed text-black fs-7" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsesix"
-                                    aria-expanded="false" aria-controls="panelsStayOpen-collapsesix">
-                                    Many desktop publishing packages ?
-                                </button>
-                            </h2>
-                            <div id="panelsStayOpen-collapsesix" class="accordion-collapse collapse"
-                                aria-labelledby="panelsStayOpen-headingsix">
-                                <div class="accordion-body fs-7 fw-500 pt-0">
-                                    Seamlessly see the tasks that need your attention, check when your next meeting is
-                                    coming up, and keep up with your progress.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="problem-card">
+          <div class="problem-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12,6 12,12 16,14"></polyline>
+            </svg>
+          </div>
+          <h3>Slow Quotes</h3>
+          <p>Hours to generate quotes while competitors respond in minutes</p>
         </div>
-    </section>
-    <!------------------------------>
-    <!------ FAQ section End------>
-    <!------------------------------>
+      </div>
 
-    <!------------------------------>
-    <!-----Contact section Start---->
-    <!------------------------------>
-    <section class="contact bg-primary position-relative overflow-hidden">
-        <div class="container position-relative">
-            <div class="dots-shape-left position-absolute"><img src="/assets/images/icons/dot-shape.png"></div>
-            <div class="dots-shape-right position-absolute"><img src="/assets/images/icons/dot-shape.png"></div>
-            <div class="row">
-                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
-                    <small class="fs-7 d-block text-warning">Join us Now</small>
-                    <h2 class="fs-3 text-white mb-0">Ready to try the product for free?</h2>
-                    <div class="owl-carousel owl-theme testimonial">
-                        <div class="item">
-                            <div class="details position-relative">
-                                <p class="fs-5 fw-light blue-light mb-4">
-                                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
-                                    piece”
-                                </p>
-                                <div class="d-flex align-items-center">
-                                    <div class="avtar-img rounded-circle overflow-hidden"><img
-                                            src="/assets/images/contact/testimonial-image.png" class="img-fluid"></div>
-                                    <div class="name ps-3">
-                                        <h6 class="text-white">Merky Lester</h6>
-                                        <small class="d-block blue-light fw-500 fs-10 pb-0">Managers</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="details position-relative">
-                                <p class="fs-5 fw-light blue-light mb-4">
-                                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
-                                    piece”
-                                </p>
-                                <div class="d-flex align-items-center">
-                                    <div class="avtar-img rounded-circle overflow-hidden"><img
-                                            src="/assets/images/contact/testimonial-image.png" class="img-fluid"></div>
-                                    <div class="name ps-3">
-                                        <h6 class="text-white">Merky Lester</h6>
-                                        <small class="d-block blue-light fw-500 fs-10 pb-0">Managers</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
-                    <form class="position-relative">
-                        <div class="row ps-xxl-5 ps-xl-5 ps-lg-3 ps-md-0 ps-sm-0 ps-0">
-                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                <div class="form-group">
-                                    <label class="form-label text-white fs-7 mb-3">Full Name</label>
-                                    <input type="text" class="form-control border-0" placeholder="Enter your name">
-                                </div>
-                            </div>
-                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                <div class="form-group">
-                                    <label class="form-label text-white fs-7 mb-3">User Name</label>
-                                    <input type="text" class="form-control border-0" placeholder="Enter your username">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <label class="form-label text-white fs-7 mb-3">Email address</label>
-                                    <input type="email" class="form-control border-0"
-                                        placeholder="Enter your email address">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <label class="form-label text-white fs-7 mb-3">Email Password</label>
-                                    <input type="text" class="form-control border-0" placeholder="Enter your password">
-                                </div>
-                            </div>
+      <div class="problem-conclusion">
+        <p>Sound familiar? You're not alone — but you don't have to stay stuck.</p>
+      </div>
+    </div>
+  </section>
 
-                            <div class="agree fs-7 fw-500">
-                                By clicking on the Sign Up button, you agree to Rakon.<br><a href="#"
-                                    class="text-warning text-decoration-none">terms and conditions of use.</a>
-                            </div>
-                            <div class="col-12">
-                                <button
-                                    class="btn btn-warning btn-hover-secondery text-capitalize mt-2 w-auto contact-btn">Try
-                                    for Free</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="trusted-companies">
-                <div class="row justify-content-center">
-                    <div class="col-xx-8 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
-                        <h3 class="fs-7 mb-0 text-white text-center">Trusted by content creators across the world</h3>
-                        <ul
-                            class="d-flex flex-wrap align-items-center list-unstyled mb-0 pl-0 owl-carousel owl-theme trusted-logos">
-                            <li class="text-center item"><a href="#"><img src="/assets/images/contact/google.svg"></a>
-                            </li>
-                            <li class="text-center item"><a href="#"><img
-                                        src="/assets/images/contact/microsoft.svg"></a></li>
-                            <li class="text-center item"><a href="#"><img src="/assets/images/contact/amazon.svg"></a>
-                            </li>
-                            <li class="text-center item"><a href="#"><img src="/assets/images/contact/unique.svg"></a>
-                            </li>
-                            <li class="text-center item"><a href="#"><img src="/assets/images/contact/google.svg"></a>
-                            </li>
-                            <li class="text-center item"><a href="#"><img
-                                        src="/assets/images/contact/microsoft.svg"></a></li>
-                            <li class="text-center item"><a href="#"><img src="/assets/images/contact/amazon.svg"></a>
-                            </li>
-                            <li class="text-center item"><a href="#"><img src="/assets/images/contact/unique.svg"></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <!-- Features Section -->
+  <section id="features" class="features-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="features-badge">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M12 2a3 3 0 0 0-3 3c0 1.5.8 2.8 2 3.6V11H9c-1.1 0-2 .9-2 2v5c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2v-5c0-1.1-.9-2-2-2h-2V8.6c1.2-.8 2-2.1 2-3.6a3 3 0 0 0-3-3z">
+            </path>
+          </svg>
+          <span>AI-Powered Platform</span>
         </div>
-    </section>
-    <!------------------------------>
-    <!-----Contact section End----->
-    <!------------------------------>
 
-    <!------------------------------>
-    <!-----Footer Start------------->
-    <!------------------------------>
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                    <div class="footer-logo-col">
-                        <a class="text-decoration-none" href="#">
-                            <!-- <img src="/assets/images/footer/Logo.svg"> -->
-                            <span class="text-white "
-                                style="font-size: 2em;text-decoration: none;"><b>destify</b>.ai</span>
-                        </a>
-                        <p class="blue-light pt-0 mb-0 fs-7 fw-500">Operations on Cloud</p>
-                        <div class="callus text-white fw-500 fs-7">
-                            1989 Don Jackson Lane
-                            <div class="blue-light">Call us: <a href="#"
-                                    class="text-warning fw-500 fs-7 ">808-956-9599</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12">
-                    <h5 class="text-white">Social</h5>
-                    <ul class="list-unstyled mb-0 pl-0">
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Instagram</a></li>
-                    </ul>
-                </div>
-                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12">
-                    <h5 class="text-white">Company</h5>
-                    <ul class="list-unstyled mb-0 pl-0">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Affiliates</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Legal & Privacy</a></li>
-                    </ul>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                    <div class="subscribe">
-                        <h5 class="text-white">Subscribe</h5>
-                        <p class="blue-light fw-500">Subscribe to get the latest news form us
-                        </p>
-                        <div class="input-group">
-                            <input type="email" class="form-control br-15" placeholder="Enter email address"
-                                aria-label="Enter email address" aria-describedby="button-addon2">
-                            <button
-                                class="btn btn-warning btn-hover-secondery ms-xxl-2 ms-xl-2 ls-lg-0 ms-md-0 ms-sm-0 ms-0"
-                                type="button" id="button-addon2">Register</button>
-                        </div>
-                    </div>
-                </div>
+        <h2 class="section-title">
+          5 Ways Destify Is
+          <span class="gradient-text">Changing The Game</span>
+        </h2>
+
+        <p class="section-subtitle">
+          Built specifically for DMCs, Destify replaces manual processes with intelligent automation
+          that works around the clock to grow your business.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-header">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M12 2a3 3 0 0 0-3 3c0 1.5.8 2.8 2 3.6V11H9c-1.1 0-2 .9-2 2v5c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2v-5c0-1.1-.9-2-2-2h-2V8.6c1.2-.8 2-2.1 2-3.6a3 3 0 0 0-3-3z">
+                </path>
+              </svg>
             </div>
-            <div class="copyrights text-center blue-light  fw-500">@<span id="autodate">2023</span> - All Rights
-                Reserved by <a href="https://www.destify.ai/" class="blue-light text-decoration-none">destify.ai</a>
+            <div class="feature-content">
+              <h3>80% Less Staff Dependency</h3>
+              <p>AI auto-generates quotes, manages bookings, and handles customer inquiries 24/7</p>
+              <div class="feature-benefit">✓ Reduce operational overhead while increasing capacity</div>
             </div>
+          </div>
         </div>
-    </footer>
-    <!------------------------------>
-    <!-------Footer End------------->
-    <!------------------------------>
 
+        <div class="feature-card">
+          <div class="feature-header">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <div class="feature-content">
+              <h3>First Quote in Seconds</h3>
+              <p>AI analyzes requirements and generates professional quotes instantly</p>
+              <div class="feature-benefit">✓ Speed wins deals — be first to respond every time</div>
+            </div>
+          </div>
+        </div>
 
-    <script src="/dist/js/jquery.min.js"></script>
-    <script src="/dist/js/bootstrap.min.js"></script>
-    <script src="/assets/libs/OwlCarousel-2/dist/owl.carousel.min.js"></script>
-    <script src="/dist/js/custom.js"></script>
+        <div class="feature-card">
+          <div class="feature-header">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"></polyline>
+              </svg>
+            </div>
+            <div class="feature-content">
+              <h3>10x Scalability</h3>
+              <p>AI never sleeps, never burns out, and scales infinitely with your business</p>
+              <div class="feature-benefit">✓ Handle 10x more bookings without adding staff</div>
+            </div>
+          </div>
+        </div>
 
+        <div class="feature-card">
+          <div class="feature-header">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <div class="feature-content">
+              <h3>20%+ More Profit</h3>
+              <p>Own your private transfers with intelligent fleet scheduling and optimization</p>
+              <div class="feature-benefit">✓ Turn costs into revenue streams automatically</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-header">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <div class="feature-content">
+              <h3>Future-Proofing</h3>
+              <p>The DMCs who adapt now will own the next decade of travel management</p>
+              <div class="feature-benefit">✓ Stay ahead while competitors struggle with outdated systems</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="features-cta">
+        <div class="cta-card">
+          <h3>Ready to Scale Like It's 2025?</h3>
+          <p>Join the DMCs who are already transforming their operations with AI</p>
+          <div class="cta-buttons">
+            <div class="cta-primary">Start Your Free Trial Today</div>
+            <div class="cta-secondary">No credit card required • 14-day free trial</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-icon footer-logo">
+              <span>D</span>
+            </div>
+            <span class="logo-text">Destify</span>
+          </div>
+          <p class="footer-description">
+            The first AI platform built specifically for DMCs. Transform your operations
+            with intelligent automation and scale like never before.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="#" class="social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                </path>
+              </svg>
+            </a>
+            <a href="#" class="social-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Demo</a></li>
+              <li><a href="#">API</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p class="copyright">© 2024 Destify. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Add scroll effect to header
+    window.addEventListener('scroll', function () {
+      const header = document.querySelector('.header');
+      if (window.scrollY > 10) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
 </body>
 
 </html>
