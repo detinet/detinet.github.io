@@ -15,39 +15,47 @@
   <meta property="og:description"
     content="The first AI platform built specifically for DMCs. Get 80% less staff dependency, instant quotes, and 20% more profit.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://office.destify.ai/assets/assets/images/logo/logo_half.png">
+  <meta property="og:image" content="https://office.destify.ai/assets/images/logo/logo_half.png">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@dest">
-  <meta name="twitter:image" content="https://office.destify.ai/assets/assets/images/logo/logo_half.png">
+  <meta name="twitter:image" content="https://office.destify.ai/assets/images/logo/logo_half.png">
 
-  <link rel="icon" type="image/png" href="https://office.destify.ai/assets/assets/images/logo/logo_half.png">
+  <link rel="icon" type="image/png" href="https://office.destify.ai/assets/images/logo/logo_half.png">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 </head>
 
 <body>
+  <div id="top"></div>
   <!-- Header -->
   <header class="header">
     <div class="container">
       <div class="header-content">
-        <div class="logo">
+        <a href="#top" class="logo">
           <div class="logo-icon">
             <span>D</span>
           </div>
           <span class="logo-text">Destify AI</span>
-        </div>
+        </a>
 
         <nav class="nav">
-          <a href="#features">Features</a>
-          <a href="#pricing">Pricing</a>
-          <a href="team.html">Team</a>
+          <a href="/#features">Features</a>
+          <a href="/#pricing">Pricing</a>
+          <a href="/team">Team</a>
         </nav>
 
         <div class="header-buttons">
           <a href="#features" class="btn btn-primary">Get Started</a>
         </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </div>
   </header>
@@ -68,8 +76,8 @@
         <p class="savings-period">Per Year</p>
 
         <p class="savings-description">
-          <span class="ai-brand-tag">Destify AI</span> save on average $20,000+ annually on<br><span
-            class="highlight-manual">Manual Human Quotation</span> costs alone.
+          <span class="ai-brand-tag">Destify AI</span> replaces<br><span class="highlight-manual">Manual Human
+            Quotation</span>
         </p>
 
         <div class="savings-benefits">
@@ -554,8 +562,8 @@
           <div class="footer-column">
             <h4>Company</h4>
             <ul>
-              <li><a href="team.html">Team</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="/team">Team</a></li>
+              <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -589,15 +597,57 @@
       });
     });
 
+    // Logo click handler
+    const logo = document.querySelector('.logo');
+    if (logo) {
+      logo.addEventListener('click', function (e) {
+        e.preventDefault();
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    }
+
     // Add scroll effect to header
+    let lastScrollY = window.scrollY;
+
     window.addEventListener('scroll', function () {
       const header = document.querySelector('.header');
-      if (window.scrollY > 10) {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > 50) {
         header.classList.add('scrolled');
       } else {
         header.classList.remove('scrolled');
       }
+
+      lastScrollY = currentScrollY;
     });
+
+    // Mobile menu functionality
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const nav = document.querySelector('.nav');
+
+    if (mobileMenuBtn && nav) {
+      mobileMenuBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        console.log('Mobile menu button clicked');
+        mobileMenuBtn.classList.toggle('active');
+        nav.classList.toggle('active');
+        console.log('Nav classes:', nav.className);
+      });
+
+      // Close menu when clicking on nav links
+      nav.addEventListener('click', function (e) {
+        if (e.target.tagName === 'A') {
+          mobileMenuBtn.classList.remove('active');
+          nav.classList.remove('active');
+        }
+      });
+    } else {
+      console.log('Mobile menu elements not found:', { mobileMenuBtn, nav });
+    }
   </script>
 </body>
 

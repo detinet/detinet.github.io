@@ -22,7 +22,7 @@
   <meta name="twitter:image" content="https://office.destify.ai/assets/assets/images/logo/logo_half.png">
 
   <link rel="icon" type="image/png" href="https://office.destify.ai/assets/assets/images/logo/logo_half.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 </head>
@@ -32,22 +32,29 @@
   <header class="header">
     <div class="container">
       <div class="header-content">
-        <div class="logo">
+        <a href="../index.html#top" class="logo">
           <div class="logo-icon">
             <span>D</span>
           </div>
           <span class="logo-text">Destify AI</span>
-        </div>
+        </a>
 
         <nav class="nav">
-          <a href="index.html#features">Features</a>
-          <a href="index.html#pricing">Pricing</a>
-          <a href="team.html">Team</a>
+          <a href="/#features">Features</a>
+          <a href="/#pricing">Pricing</a>
+          <a href="/team">Team</a>
         </nav>
 
         <div class="header-buttons">
-          <a href="index.html#features" class="btn btn-primary">Get Started</a>
+          <a href="../index.html#features" class="btn btn-primary">Get Started</a>
         </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </div>
   </header>
@@ -183,15 +190,54 @@
   </footer>
 
   <script>
+    // Logo click handler
+    const logo = document.querySelector('.logo');
+    if (logo) {
+      logo.addEventListener('click', function (e) {
+        e.preventDefault();
+        window.location.href = '../index.html#top';
+      });
+    }
+
     // Add scroll effect to header
+    let lastScrollY = window.scrollY;
+
     window.addEventListener('scroll', function () {
       const header = document.querySelector('.header');
-      if (window.scrollY > 10) {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > 50) {
         header.classList.add('scrolled');
       } else {
         header.classList.remove('scrolled');
       }
+
+      lastScrollY = currentScrollY;
     });
+
+    // Mobile menu functionality
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const nav = document.querySelector('.nav');
+
+    if (mobileMenuBtn && nav) {
+      mobileMenuBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        console.log('Mobile menu button clicked');
+        mobileMenuBtn.classList.toggle('active');
+        nav.classList.toggle('active');
+        console.log('Nav classes:', nav.className);
+      });
+
+      // Close menu when clicking on nav links
+      nav.addEventListener('click', function (e) {
+        if (e.target.tagName === 'A') {
+          mobileMenuBtn.classList.remove('active');
+          nav.classList.remove('active');
+        }
+      });
+    } else {
+      console.log('Mobile menu elements not found:', { mobileMenuBtn, nav });
+    }
   </script>
 </body>
 
