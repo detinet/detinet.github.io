@@ -21,15 +21,49 @@
   <meta name="twitter:site" content="@dest">
   <meta name="twitter:image" content="https://office.destify.ai/assets/assets/images/logo/logo_half.png">
 
-  <link rel="icon" type="image/png" href="https://office.destify.ai/assets/assets/images/logo/logo_half.png">
+  <link rel="icon" type="image/png" href="../assets/images/DestifyFavicon.png">
   <link rel="stylesheet" href="../style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RXN4LSMBEQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RXN4LSMBEQ');
+  </script>
 </head>
 
 <body>
-  <!-- Header Placeholder -->
-  <div id="header-placeholder"></div>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="../#top" class="logo" id="logo-link">
+          <img src="../assets/images/destify-logo-lq-small.png" alt="Destify AI" class="logo-image">
+        </a>
+
+        <nav class="nav">
+          <a href="../#features">Features</a>
+          <a href="../#pricing">Pricing</a>
+        </nav>
+
+        <div class="header-buttons">
+          <a href="../#features" class="btn btn-primary">Get Started</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
   <!-- Main Content -->
   <main class="main-content">
@@ -98,11 +132,43 @@
     </div>
   </main>
 
-  <!-- Footer Placeholder -->
-  <div id="footer-placeholder"></div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-text">Destify</span>
+          </div>
+          <p class="footer-description">
+            The first AI platform built specifically for DMCs. Transform your business with intelligent automation.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="../team/">Team</a></li>
+              <li><a href="../contact/">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p class="copyright">© 2025 Destify. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- Scripts -->
-  <script src="../js/includes.js"></script>
   <script src="../js/common.js"></script>
 </body>
 

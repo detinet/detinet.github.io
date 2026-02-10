@@ -140,6 +140,13 @@ body {
   color: var(--foreground);
 }
 
+.logo-image {
+  height: auto;
+  width: auto;
+  max-height: 2.5rem;
+  display: block;
+}
+
 .nav {
   display: none;
   gap: var(--spacing-md);
